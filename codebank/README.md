@@ -27,3 +27,8 @@ pasta .pgdata: tem todos os dados do BD postgres
 
 
 ## Aula 2 - Comunicação entre serviços com gRPC e Apache Kafka
+
+- cd apacha-kafka
+- docker-compose up-d
+
+parei no 34:05 https://www.youtube.com/watch?v=71x5SUY7yhA&ab_channel=FullCycle
