@@ -31,4 +31,5 @@ pasta .pgdata: tem todos os dados do BD postgres
 - cd apacha-kafka
 - docker-compose up-d
 
-parei no 34:05 https://www.youtube.com/watch?v=71x5SUY7yhA&ab_channel=FullCycle
+
+parei no 1:36:00 https://www.youtube.com/watch?v=71x5SUY7yhA&ab_channel=FullCycle
