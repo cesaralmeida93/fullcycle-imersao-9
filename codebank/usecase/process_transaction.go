@@ -2,11 +2,11 @@ package usecase
 
 import (
 	"encoding/json"
+	"github.com/codeedu/codebank/domain"
+	"github.com/codeedu/codebank/dto"
+	"github.com/codeedu/codebank/infrastructure/kafka"
+	"os"
 	"time"
-
-	"github.com/cesaralmeida93/codebank/domain"
-	"github.com/cesaralmeida93/codebank/dto"
-	"github.com/cesaralmeida93/codebank/infrastructure/kafka"
 )
 
 type UseCaseTransaction struct {
@@ -27,7 +27,7 @@ func (u UseCaseTransaction) ProcessTransaction(transactionDto dto.Transaction) (
 	creditCard.ID = ccBalanceAndLimit.ID
 	creditCard.Limit = ccBalanceAndLimit.Limit
 	creditCard.Balance = ccBalanceAndLimit.Balance
-	t := u.NewTransaction(transactionDto, ccBalanceAndLimit)
+	t := u.newTransaction(transactionDto, ccBalanceAndLimit)
 	t.ProcessAndValidate(creditCard)
 	err = u.TransactionRepository.SaveTransaction(*t, *creditCard)
 	if err != nil {
@@ -39,7 +39,7 @@ func (u UseCaseTransaction) ProcessTransaction(transactionDto dto.Transaction) (
 	if err != nil {
 		return domain.Transaction{}, err
 	}
-	err = u.KafkaProducer.Publish(string(transactionJson), "payments")
+	err = u.KafkaProducer.Publish(string(transactionJson), os.Getenv("KafkaTransactionsTopic"))
 	if err != nil {
 		return domain.Transaction{}, err
 	}
@@ -56,7 +56,7 @@ func (u UseCaseTransaction) hydrateCreditCard(transactionDto dto.Transaction) *d
 	return creditCard
 }
 
-func (u UseCaseTransaction) NewTransaction(transaction dto.Transaction, cc domain.CreditCard) *domain.Transaction {
+func (u UseCaseTransaction) newTransaction(transaction dto.Transaction, cc domain.CreditCard) *domain.Transaction {
 	t := domain.NewTransaction()
 	t.CreditCardId = cc.ID
 	t.Amount = transaction.Amount

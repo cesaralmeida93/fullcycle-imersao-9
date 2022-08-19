@@ -1,4 +1,4 @@
-FROM golang:1.15
+FROM --platform=linux/amd64 golang:1.15
 
 WORKDIR /go/src
 ENV PATH="/go/bin:${PATH}"

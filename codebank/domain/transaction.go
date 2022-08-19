@@ -1,10 +1,15 @@
 package domain
 
 import (
-	"time"
-
 	uuid "github.com/satori/go.uuid"
+	"time"
 )
+
+type TransactionRepository interface {
+	SaveTransaction(transaction Transaction, creditCard CreditCard) error
+	GetCreditCard(creditCard CreditCard) (CreditCard, error)
+	CreateCreditCard(creditCard CreditCard) error
+}
 
 type Transaction struct {
 	ID           string
@@ -14,12 +19,6 @@ type Transaction struct {
 	Store        string
 	CreditCardId string
 	CreatedAt    time.Time
-}
-
-type TransactionRepository interface {
-	SaveTransaction(transaction Transaction, creditCard CreditCard) error
-	GetCreditCard(creditCard CreditCard) (CreditCard, error)
-	CreateCreditCard(creditCard CreditCard) error
 }
 
 func NewTransaction() *Transaction {

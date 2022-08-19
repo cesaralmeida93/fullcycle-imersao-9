@@ -21,3 +21,4 @@ message PaymentRequest {
   string store = 3;
   string description = 4;
 }
+

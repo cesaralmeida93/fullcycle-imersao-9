@@ -1,7 +1,8 @@
 # Codebank-go
 
 ## Aula 1 - Estudo de caso
-
+- docker-compose build --no-cache
+- docker network create codebank_default
 - docker-compose up -d
 - docker-compose ps
 - docker exec -it appbank bash  
@@ -22,6 +23,7 @@ pasta .pgdata: tem todos os dados do BD postgres
 - aba connection:
     - hotsname/address: db
     - port: 5432
+    - username: postgres
     - database: codebank
     - password: root
 
@@ -31,5 +33,5 @@ pasta .pgdata: tem todos os dados do BD postgres
 - cd apacha-kafka
 - docker-compose up-d
 
-
-parei no 1:36:00 https://www.youtube.com/watch?v=71x5SUY7yhA&ab_channel=FullCycle
+- evans -r repl -p=50052
+- call Payment
