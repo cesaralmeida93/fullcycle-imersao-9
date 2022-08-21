@@ -6,7 +6,6 @@ import (
 	"log"
 	"os"
 
-	"github.com/codeedu/codebank/domain"
 	"github.com/codeedu/codebank/infrastructure/grpc/server"
 	"github.com/codeedu/codebank/infrastructure/kafka"
 	"github.com/codeedu/codebank/infrastructure/repository"
@@ -25,21 +24,6 @@ func init() {
 func main() {
 	db := setupDb()
 	defer db.Close()
-
-	cc := domain.NewCreditCard()
-	cc.Number = "1234"
-	cc.Name = "Wesley"
-	cc.ExpirationYear = 2021
-	cc.ExpirationMonth = 7
-	cc.CVV = 123
-	cc.Limit = 1000
-	cc.Balance = 0
-
-	repo := repository.NewTransactionRepositoryDb(db)
-	err := repo.CreateCreditCard(*cc)
-	if err != nil {
-		fmt.Println(err)
-	}
 
 	producer := setupKafkaProducer()
 	processTransactionUseCase := setupTransactionUseCase(db, producer)
