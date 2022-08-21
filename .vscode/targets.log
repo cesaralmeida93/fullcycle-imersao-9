@@ -10,7 +10,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 make: *** No rule to make target `all'.  Stop.
 
 
-# Make data base, printed on Thu Aug 18 21:14:37 2022
+# Make data base, printed on Fri Aug 19 22:57:35 2022
 
 # Variables
 
@@ -20,6 +20,7 @@ make: *** No rule to make target `all'.  Stop.
 ?F = $(notdir $?)
 # environment
 ELECTRON_NO_ATTACH_CONSOLE = 1
+ 
 # environment
 NVM_INC = /Users/cesaraugustosantosdealmeida/.nvm/versions/node/v16.15.0/include/node
 # automatic
@@ -28,7 +29,6 @@ NVM_INC = /Users/cesaraugustosantosdealmeida/.nvm/versions/node/v16.15.0/include
 @D = $(patsubst %/,%,$(dir $@))
 # automatic
 @F = $(notdir $@)
- 
 # makefile
 CURDIR := /Users/cesaraugustosantosdealmeida/Documents/personal-studies/fullcycle-imersao-9
 # makefile
@@ -38,9 +38,7 @@ VSCODE_NLS_CONFIG = {"locale":"pt-br","availableLanguages":{},"_languagePackSupp
 # environment
 _ = /usr/bin/make
 # environment
-STARSHIP_SESSION_KEY = 3192813093205064
-# environment
-VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+STARSHIP_SESSION_KEY = 1501116461861344
 # environment
 __CFBundleIdentifier = com.microsoft.VSCode
 # environment
@@ -48,9 +46,7 @@ INFOPATH = /opt/homebrew/share/info:
 # environment
 VSCODE_CWD = /Users/cesaraugustosantosdealmeida/Documents/personal-studies/fullcycle-imersao-9
 # environment
-GOPROXY = https://proxy.golang.org,direct
-# environment
-PATH = /usr/local/go/bin:/Users/cesaraugustosantosdealmeida/Documents/go-workspace/bin:/Users/cesaraugustosantosdealmeida/.nvm/versions/node/v16.15.0/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+PATH = /Users/cesaraugustosantosdealmeida/Documents/go-workspace/bin:/usr/local/go/bin:/Users/cesaraugustosantosdealmeida/.nvm/versions/node/v16.15.0/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin
 # environment
 GOROOT = /usr/local/go
 # environment
@@ -70,7 +66,7 @@ PUPPETEER_EXECUTABLE_PATH = /opt/homebrew/bin/chromium
 # default
 .FEATURES := target-specific order-only second-expansion else-if archives jobserver check-symlink
 # environment
-SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.B4vsKN214R/Listeners
+SSH_AUTH_SOCK = /private/tmp/com.apple.launchd.2kzGo0Phqp/Listeners
 # automatic
 %F = $(notdir $%)
 # environment
@@ -82,7 +78,7 @@ ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 # environment
 MANPATH = /Users/cesaraugustosantosdealmeida/.nvm/versions/node/v16.15.0/share/man:/opt/homebrew/share/man::
 # environment
-GOMODCACHE = /Users/cesaraugustosantosdealmeida/Documents/go-workspace/pkg/mod
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
 HOME = /Users/cesaraugustosantosdealmeida
 # default
@@ -118,7 +114,7 @@ USER = cesaraugustosantosdealmeida
 # makefile
 .DEFAULT_GOAL := 
 # environment
-TERM_SESSION_ID = D9A4A160-84BF-401C-8FFA-C403F54A3C25
+TERM_SESSION_ID = 0A8DE276-16C9-458F-912C-69887A308901
 # environment
 LESS = -R
 # automatic
@@ -148,7 +144,7 @@ TERM_PROGRAM_VERSION = 445
 # environment
 NVM_DIR = /Users/cesaraugustosantosdealmeida/.nvm
 # environment
-XPC_SERVICE_NAME = application.com.microsoft.VSCode.33061787.33061793.5B95B656-8BD0-43BB-A851-4476B519CDAB
+XPC_SERVICE_NAME = application.com.microsoft.VSCode.33061787.33061793.FA051808-11E0-45B3-BBC1-D340E7BCEF01
 # environment
 HOMEBREW_PREFIX = /opt/homebrew
 # automatic
@@ -184,11 +180,11 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 56818
+VSCODE_PID = 3448
 # environment
 STARSHIP_SHELL = zsh
 # variable set hash-table stats:
-# Load=86/1024=8%, Rehash=0, Collisions=4/106=4%
+# Load=84/1024=8%, Rehash=0, Collisions=3/104=3%
 
 # Pattern-specific Variable Values
 
@@ -196,9 +192,9 @@ STARSHIP_SHELL = zsh
 
 # Directories
 
-# . (device 16777231, inode 32682185): 9 files, no impossibilities.
+# . (device 16777233, inode 32682185): 10 files, no impossibilities.
 
-# 9 files, no impossibilities in 1 directories.
+# 10 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -270,6 +266,6 @@ GNUmakefile:
 # strcache size: total = 0 / max = 0 / min = 4096 / avg = 0
 # strcache free: total = 0 / max = 0 / min = 4096 / avg = 0
 
-# Finished Make data base on Thu Aug 18 21:14:37 2022
+# Finished Make data base on Fri Aug 19 22:57:35 2022
 
  

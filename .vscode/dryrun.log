@@ -1,7 +1,6 @@
 make --dry-run --always-make --keep-going --print-directory
 make: Entering directory `/Users/cesaraugustosantosdealmeida/Documents/personal-studies/fullcycle-imersao-9'
+make: Leaving directory `/Users/cesaraugustosantosdealmeida/Documents/personal-studies/fullcycle-imersao-9'
  
 make: *** No targets specified and no makefile found.  Stop.
 
-make: Leaving directory `/Users/cesaraugustosantosdealmeida/Documents/personal-studies/fullcycle-imersao-9'
- 
