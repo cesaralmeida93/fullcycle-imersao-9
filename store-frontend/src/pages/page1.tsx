@@ -2,12 +2,12 @@ import * as React from 'react';
 type Props = {
 
 };
-const Page1 = (props: Props) => {
-    return (
-        <div>
-            Hello World
-        </div>
-    )
-}
+const Page1 = (pros: Props) => {
+  return (
+    <div>
+      Hello World
+    </div>
+  );
+};
 
 export default Page1;
