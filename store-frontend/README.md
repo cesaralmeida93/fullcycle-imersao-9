@@ -12,7 +12,7 @@
 - docker-compose exec app bash
     - npm install @material-ui/core @material-ui/icons --save
 
-parei no 25:50 https://www.youtube.com/watch?v=S5PAWIgIRuY&t=783s&ab_channel=FullCycle
+parei no 33:25 https://www.youtube.com/watch?v=S5PAWIgIRuY&t=783s&ab_channel=FullCycle
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
